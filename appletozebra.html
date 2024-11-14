@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Apple to Zebra</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <style>
+        /* Global Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: 'Raleway', sans-serif;
+            background: linear-gradient(to right, #00c6ff, #0072ff); /* Beautiful gradient background */
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            padding: 30px;
+            text-align: center;
+        }
+
+        /* Title Styling */
+        h1 {
+            font-size: 4rem;
+            font-weight: 700;
+            margin-bottom: 40px;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Grid Container */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        /* Individual Grid Item */
+        .grid-item {
+            background-color: #fff;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Image Styling */
+        .grid-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: contain; /* Ensure images fit without cropping */
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .grid-item span {
+            font-size: 1.7rem;
+            font-weight: 700;
+            color: #2d3436;
+            transition: color 0.3s ease;
+        }
+
+        /* Hover Effect */
+        .grid-item:hover {
+            transform: translateY(-10px) scale(1.05);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+            background-color: #f1f1f1;
+        }
+
+        .grid-item:hover span {
+            color: #3498db; /* Color change on hover */
+        }
+
+        /* Footer Styling */
+        footer {
+            margin-top: 50px;
+            font-size: 1.5rem;
+            color: #fff;
+            font-weight: 600;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2.8rem;
+                margin-bottom: 30px;
+            }
+
+            .grid-item {
+                padding: 15px;
+            }
+
+            footer {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Apple to Zebra with Images</h1>
+
+    <div class="grid-container">
+        <div class="grid-item" onclick="speakWord('A,p,p,l,e, Apple')">
+    <img src="images/apple to zebra/apple.jpg" alt="Apple">
+    <span>Apple</span>
+</div>
+<div class="grid-item" onclick="speakWord('B,a,l,l, Ball')">
+    <img src="images/apple to zebra/ball.jpg" alt="Ball">
+    <span>Ball</span>
+</div>
+<div class="grid-item" onclick="speakWord('C,a,t, Cat')">
+    <img src="images/apple to zebra/cat.jpg" alt="Cat">
+    <span>Cat</span>
+</div>
+<div class="grid-item" onclick="speakWord('D,o,g, Dog')">
+    <img src="images/apple to zebra/dog.jpg" alt="Dog">
+    <span>Dog</span>
+</div>
+<div class="grid-item" onclick="speakWord('E,l,e,p,h,a,n,t, Elephant')">
+    <img src="images/apple to zebra/elephant.jpg" alt="Elephant">
+    <span>Elephant</span>
+</div>
+<div class="grid-item" onclick="speakWord('F,i,s,h, Fish')">
+    <img src="images/apple to zebra/fish.jpg" alt="Fish">
+    <span>Fish</span>
+</div>
+<div class="grid-item" onclick="speakWord('G,i,r,a,f,f,e, Giraffe')">
+    <img src="images/apple to zebra/giraffe.jpg" alt="Giraffe">
+    <span>Giraffe</span>
+</div>
+<div class="grid-item" onclick="speakWord('H,o,r,s,e, Horse')">
+    <img src="images/apple to zebra/horse.jpg" alt="Horse">
+    <span>Horse</span>
+</div>
+<div class="grid-item" onclick="speakWord('I,c,e, ,C,r,e,a,m, Ice Cream')">
+    <img src="images/apple to zebra/ice-cream.jpg" alt="Ice Cream">
+    <span>Ice Cream</span>
+</div>
+<div class="grid-item" onclick="speakWord('J,u,g, Jug')">
+    <img src="images/apple to zebra/jug.jpg" alt="Jug">
+    <span>Jug</span>
+</div>
+<div class="grid-item" onclick="speakWord('K,i,t,e, Kite')">
+    <img src="images/apple to zebra/kite.jpg" alt="Kite">
+    <span>Kite</span>
+</div>
+<div class="grid-item" onclick="speakWord('L,i,o,n, Lion')">
+    <img src="images/apple to zebra/lion.jpg" alt="Lion">
+    <span>Lion</span>
+</div>
+<div class="grid-item" onclick="speakWord('M,o,n,k,e,y, Monkey')">
+    <img src="images/apple to zebra/monkey.jpg" alt="Monkey">
+    <span>Monkey</span>
+</div>
+<div class="grid-item" onclick="speakWord('N,o,s,e, Nose')">
+    <img src="images/apple to zebra/nose.jpg" alt="Nose">
+    <span>Nose</span>
+</div>
+<div class="grid-item" onclick="speakWord('O,c,t,o,p,u,s, Octopus')">
+    <img src="images/apple to zebra/octopus.jpg" alt="Octopus">
+    <span>Octopus</span>
+</div>
+<div class="grid-item" onclick="speakWord('P,a,r,r,o,t, Parrot')">
+    <img src="images/apple to zebra/parrot.jpg" alt="Parrot">
+    <span>Parrot</span>
+</div>
+<div class="grid-item" onclick="speakWord('Q,u,a,i,l, Quail')">
+    <img src="images/apple to zebra/quail.jpg" alt="Quail">
+    <span>Quail</span>
+</div>
+<div class="grid-item" onclick="speakWord('R,a,b,b,i,t, Rabbit')">
+    <img src="images/apple to zebra/rabbit.jpg" alt="Rabbit">
+    <span>Rabbit</span>
+</div>
+<div class="grid-item" onclick="speakWord('S,n,a,k,e, Snake')">
+    <img src="images/apple to zebra/snake.jpg" alt="Snake">
+    <span>Snake</span>
+</div>
+<div class="grid-item" onclick="speakWord('T,i,g,e,r, Tiger')">
+    <img src="images/apple to zebra/tiger.jpg" alt="Tiger">
+    <span>Tiger</span>
+</div>
+<div class="grid-item" onclick="speakWord('U,m,b,r,e,l,l,a, Umbrella')">
+    <img src="images/apple to zebra/umbrella.jpg" alt="Umbrella">
+    <span>Umbrella</span>
+</div>
+<div class="grid-item" onclick="speakWord('V,u,l,t,u,r,e, Vulture')">
+    <img src="images/apple to zebra/vulture.jpg" alt="Vulture">
+    <span>Vulture</span>
+</div>
+<div class="grid-item" onclick="speakWord('W,a,t,c,h, Watch')">
+    <img src="images/apple to zebra/watch.jpg" alt="Watch">
+    <span>Watch</span>
+</div>
+<div class="grid-item" onclick="speakWord('X,-,r,a,y, X-ray')">
+    <img src="images/apple to zebra/x-ray.jpg" alt="X-ray">
+    <span>X-ray</span>
+</div>
+<div class="grid-item" onclick="speakWord('Y,a,k, Yak')">
+    <img src="images/apple to zebra/yak.jpg" alt="Yak">
+    <span>Yak</span>
+</div>
+<div class="grid-item" onclick="speakWord('Z,e,b,r,a, Zebra')">
+    <img src="images/apple to zebra/zebra.jpg" alt="Zebra">
+    <span>Zebra</span>
+</div>
+        <!-- Add more items here -->
+    </div>
+
+    <footer>Created by Prashant Sahani</footer>
+
+    <script>
+        // Function to speak the word in English with Nepali accent
+        function speakWord(word) {
+            if ('speechSynthesis' in window) {
+                const synth = window.speechSynthesis;
+                const utterance = new SpeechSynthesisUtterance(word);
+                utterance.lang = 'en-NE'; // Nepali language code (with Nepali accent)
+                synth.speak(utterance);
+            } else {
+                alert("Sorry, your browser doesn't support text-to-speech.");
+            }
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Primary Book</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(to right, #00c6ff, #0072ff);
+            color: #444;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* Header Styling */
+        header {
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            font-size: 4rem;
+            color: #fff;
+            padding: 20px;
+            width: 100%;
+            background: linear-gradient(to left, #00c6ff, #0072ff);
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+            animation: fadeInDown 1s ease;
+        }
+
+        @keyframes fadeInDown {
+            0% { opacity: 0; transform: translateY(-50px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Main Content Styling */
+        main {
+            width: 100%;
+            max-width: 1200px;
+            padding: 0 20px;
+        }
+
+        .categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        /* Category Cards */
+        .category-card {
+            background: #fff;
+            border-radius: 15px;
+            padding: 40px 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            cursor: pointer;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .category-card:hover {
+            background-color: #ffde8a;
+            transform: scale(1.05);
+        }
+
+        .category-card h2 {
+            font-size: 1.5rem;
+            color: #ff6f61;
+            margin-bottom: 15px;
+        }
+
+        .category-card p {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        /* Icon Styling */
+        .category-card .icon {
+            font-size: 3rem;
+            color: #ff9472;
+            margin-bottom: 15px;
+        }
+    
+
+        /* Footer Styling */
+        footer {
+            margin-top: 50px;
+            font-size: 1rem;
+            color: #fff;
+            background: blue;
+            width: 100%;
+            font-weight: 500;
+            padding: 20px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 3rem;
+            }
+
+            .category-card h2 {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>My Primary Book</h1>
+    </header>
+
+    <main>
+        <h2 style="color: #fff; font-size: 2rem; margin-bottom: 20px;">Explore Categories</h2>
+        <div class="categories">
+            <div class="categories">
+    <div class="category-card" onclick="location.href='alphabets.html'">
+        <div class="icon">🔤</div>
+        <h2>English Alphabets</h2>
+        <p>Learn the English Alphabets with sounds</p>
+    </div>
+<div class="category-card" onclick="location.href='appletozebra.html'">
+        <div class="icon">🔤</div>
+        <h2>Apple to Zebra</h2>
+        <p>Learn Apple to Zebra with sounds</p>
+    </div>
+    <div class="category-card" onclick="location.href='nepali-alphabet.html'">
+        <div class="icon">📖</div>
+        <h2>नेपाली वर्णमाला</h2>
+        <p>Learn the Nepali alphabet (क, ख, ग) with sounds.</p>
+    </div>
+<div class="category-card" onclick="location.href='nepali-words.html'">
+        <div class="icon">📖</div>
+        <h2>कलम देखि ज्ञानी सम्म</h2>
+        <p>Learn the Nepali Words (कलम देखि ज्ञानी सम्म) with sounds.</p>
+    </div>
+                 <div class="category-card" onclick="location.href='nepali-vowel.html'">
+        <div class="icon">📖</div>
+        <h2>नेपाली vowels अ देखि अ: सम्म </h2>
+        <p>Learn the Nepali vowels (अ देखि अ: सम्म) with sounds.</p>
+    </div>
+<div class="category-card" onclick="location.href='vowel-words.html'">
+        <div class="icon">📖</div>
+        <h2>अनार देखि अ: सम्म</h2>
+        <p>Learn the Nepali Words (अनार देखि अ: सम्म) with sounds.</p>
+    </div>
+    <div class="category-card" onclick="location.href='numbers-english.html'">
+        <div class="icon">🔢</div>
+        <h2>Numbers in English</h2>
+        <p>Learn Numbers with words in English with sounds.</p>
+    </div>
+                <div class="category-card" onclick="location.href='numbers-nepali.html'">
+        <div class="icon">🔢</div>
+        <h2>अङ्कहरू नेपालीमा</h2>
+        <p>Learn Numbers with words in Nepali with sounds.</p>
+    </div>
+
+    <div class="category-card" onclick="location.href='colours.html'">
+        <div class="icon">🌈</div>
+        <h2>Colours रङहरू</h2>
+        <p>Learn Colour Names in English and in Nepali with sounds.</p>
+    </div>
+
+    <div class="category-card" onclick="location.href='shapes.html'">
+        <div class="icon">🔵🔺</div>
+        <h2>Shapes आकारहरू</h2>
+        <p>Learn about shapes and their names with sound.</p>
+    </div>
+
+    <div class="category-card" onclick="location.href='days.html'">
+        <div class="icon">📅</div>
+        <h2>हप्ताका दिनहरू</h2>
+        <p>Know the days of the week in Nepali and English.</p>
+    </div>
+
+    <div class="category-card" onclick="location.href='months-english.html'">
+        <div class="icon">🗓️</div>
+        <h2>English Months</h2>
+        <p>Learn all English months with sounds.</p>
+    </div>
+                <div class="category-card" onclick="location.href='months-nepali.html'">
+        <div class="icon">🗓️</div>
+        <h2>नेपाली महिनाहरू</h2>
+        <p>Learn all Nepali months with sounds.</p>
+    </div>
+
+    <div class="category-card" onclick="location.href='body_parts.html'">
+        <div class="icon">🧒👂</div>
+        <h2>शरीरका अङ्गहरू</h2>
+        <p>Learn about different body parts.</p>
+    </div>
+
+    <div class="category-card" onclick="location.href='animals.html'">
+        <div class="icon">🐶🐱</div>
+        <h2>जनावरहरू</h2>
+        <p>Learn about animals with names and sounds.</p>
+    </div>
+
+    <div class="category-card" onclick="location.href='vegetables.html'">
+        <div class="icon">🥕🍅</div>
+        <h2>तरकारीहरू</h2>
+        <p>Learn about vegetables with examples.</p>
+    </div>
+
+    <div class="category-card" onclick="location.href='transport.html'">
+        <div class="icon">🚗🚲</div>
+        <h2>सवारी साधनहरू</h2>
+        <p>Explore different modes of transport.</p>
+    </div>
+
+    <div class="category-card" onclick="location.href='family.html'">
+        <div class="icon">👨‍👩‍👧‍👦</div>
+        <h2>परिवारका सदस्यहरू</h2>
+        <p>Learn about family members and their roles.</p>
+    </div>
+
+    <div class="category-card" onclick="location.href='festivals.html'">
+        <div class="icon">🎉</div>
+        <h2>नेपाली चाडपर्वहरू</h2>
+        <p>Discover Nepali festivals and traditions.</p>
+    </div>
+
+    <div class="category-card" onclick="location.href='professions.html'">
+        <div class="icon">👩‍⚕️👨‍🏫</div>
+        <h2>पेशा</h2>
+        <p>Learn about various professions.</p>
+    </div>
+
+    <div class="category-card" onclick="location.href='nature.html'">
+        <div class="icon">🌳🌈</div>
+        <h2>प्रकृति र वातावरण</h2>
+        <p>Discover nature and the environment around us.</p>
+    </div>
+
+    <div class="category-card" onclick="location.href='basic_phrases.html'">
+        <div class="icon">💬</div>
+        <h2>सामान्य वाक्यांशहरू</h2>
+        <p>Basic phrases for daily conversation.</p>
+    </div>
+
+    <div class="category-card" onclick="location.href='wild_animals.html'">
+        <div class="icon">🐅</div>
+        <h2>जङ्गली जनावरहरू</h2>
+        <p>Discover different wild animals and their names.</p>
+    </div>
+
+    <div class="category-card" onclick="location.href='insects.html'">
+        <div class="icon">🐝</div>
+        <h2>कीराफट्याङ्ग्रा</h2>
+        <p>Identify common insects with Nepali names.</p>
+    </div>
+
+    <div class="category-card" onclick="location.href='planets.html'">
+        <div class="icon">🌍</div>
+        <h2>ग्रहहरू</h2>
+        <p>Learn about planets in our solar system.</p>
+    </div>
+
+    <div class="category-card" onclick="location.href='tools.html'">
+        <div class="icon">🛠️</div>
+        <h2>औजारहरू</h2>
+        <p>Learn about different tools and their purposes.</p>
+    </div>
+
+    <div class="category-card" onclick="location.href='natural_disasters.html'">
+        <div class="icon">🌪️</div>
+        <h2>प्राकृतिक विपत्तिहरू</h2>
+        <p>Understand common natural disasters and safety.</p>
+    </div>
+
+    <div class="category-card" onclick="location.href='seasons.html'">
+        <div class="icon">🍂</div>
+        <h2>मौसमहरू</h2>
+        <p>Learn about the seasons in Nepali.</p>
+    </div>
+
+    <div class="category-card" onclick="location.href='famous_places.html'">
+        <div class="icon">🏔️</div>
+        <h2>प्रसिद्ध स्थानहरू</h2>
+        <p>Explore famous places in Nepal.</p>
+    </div>
+
+    <div class="category-card" onclick="location.href='music_instruments.html'">
+        <div class="icon">🎸</div>
+        <h2>संगीत वाद्ययन्त्रहरू</h2>
+        <p>Learn about traditional and modern instruments.</p>
+    </div>
+
+    <div class="category-card" onclick="location.href='trees.html'">
+        <div class="icon">🌳</div>
+        <h2>रूख र बिरुवाहरू</h2>
+        <p>Identify trees and plants in Nepali and English.</p>
+    </div>
+
+    <div class="category-card" onclick="location.href='directions.html'">
+        <div class="icon">🧭</div>
+        <h2>दिशाहरू</h2>
+        <p>Learn about directions (पूर्व, पश्चिम) in Nepali.</p>
+    </div>
+<div class="category-card" onclick="location.href='traditions.html'">
+    <div class="icon">🪔</div>
+    <h2>नेपाली परम्पराहरू</h2>
+    <p>Learn about various Nepali traditions and customs.</p>
+</div>
+
+<div class="category-card" onclick="location.href='historical_monuments.html'">
+    <div class="icon">🏯</div>
+    <h2>ऐतिहासिक स्मारकहरू</h2>
+    <p>Explore famous historical monuments in Nepal.</p>
+</div>
+
+<div class="category-card" onclick="location.href='daily_chores.html'">
+    <div class="icon">🧹</div>
+    <h2>दैनिक कामकाजी क्रियाकलापहरू</h2>
+    <p>Learn about daily chores and household tasks.</p>
+</div>
+
+<div class="category-card" onclick="location.href='famous_people.html'">
+    <div class="icon">👑</div>
+    <h2>प्रसिद्ध व्यक्तिहरू</h2>
+    <p>Discover the life of famous personalities in Nepali history.</p>
+</div>
+
+<div class="category-card" onclick="location.href='transportation_history.html'">
+    <div class="icon">🛳️</div>
+    <h2>यातायातको इतिहास</h2>
+    <p>Learn the history of transportation in Nepal.</p>
+</div>
+
+<div class="category-card" onclick="location.href='nepali_cuisine.html'">
+    <div class="icon">🍲</div>
+    <h2>नेपाली व्यंजनहरू</h2>
+    <p>Explore popular Nepali dishes and recipes.</p>
+</div>
+
+<div class="category-card" onclick="location.href='traditional_instruments.html'">
+    <div class="icon">🎻</div>
+    <h2>परम्परागत संगीत वाद्ययन्त्र</h2>
+    <p>Learn about traditional musical instruments of Nepal.</p>
+</div>
+
+<div class="category-card" onclick="location.href='religions.html'">
+    <div class="icon">🕉️</div>
+    <h2>धर्म</h2>
+    <p>Learn about different religions practiced in Nepal.</p>
+</div>
+
+<div class="category-card" onclick="location.href='folk_dances.html'">
+    <div class="icon">💃🕺</div>
+    <h2>लोक नृत्यहरू</h2>
+    <p>Discover popular folk dances from Nepal.</p>
+</div>
+
+<div class="category-card" onclick="location.href='natural_beauty.html'">
+    <div class="icon">🏞️</div>
+    <h2>प्राकृतिक सौन्दर्य</h2>
+    <p>Explore the natural beauty of Nepal’s landscapes.</p>
+</div>
+
+<div class="category-card" onclick="location.href='languages_of_nepal.html'">
+    <div class="icon">🗣️</div>
+    <h2>नेपालका भाषा</h2>
+    <p>Learn about the diverse languages spoken in Nepal.</p>
+</div>
+
+<div class="category-card" onclick="location.href='mountains_of_nepal.html'">
+    <div class="icon">🏔️</div>
+    <h2>नेपालका पर्वतहरू</h2>
+    <p>Explore the majestic mountains of Nepal.</p>
+</div>
+
+<div class="category-card" onclick="location.href='birds_of_nepal.html'">
+    <div class="icon">🐦</div>
+    <h2>नेपालका चरा</h2>
+    <p>Learn about the birds found in Nepal.</p>
+</div>
+
+<div class="category-card" onclick="location.href='marine_life.html'">
+    <div class="icon">🐠</div>
+    <h2>सागरीय जीवन</h2>
+    <p>Discover the marine life around Nepal’s coastal regions.</p>
+</div>
+
+<div class="category-card" onclick="location.href='folklore_heroes.html'">
+    <div class="icon">👑</div>
+    <h2>लोककथा नायकहरू</h2>
+    <p>Explore Nepali folklore heroes and their legendary tales.</p>
+</div>
+        </div>
+    </main>
+
+    <footer>
+        Created by Prashant Sahani
+    </footer>
+
+</body>
+</html>
